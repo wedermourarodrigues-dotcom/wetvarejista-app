@@ -3,9 +3,15 @@
   "name": "W&T Varejista",
   "icons": [
     {
-      "src": "https://w3.org",
+      "src": "https://unsplash.com",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://unsplash.com",
+      "sizes": "192x192",
+      "type": "image/jpeg"
     }
   ],
   "start_url": "/",
