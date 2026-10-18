@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
   <title>W&T Varejista | Acesso</title>
 
-  <!-- Configurações PWA do seu aplicativo antigo que funcionam -->
+  <!-- Conecta o arquivo de configurações do aplicativo (PWA) -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Configurações para forçar o funcionamento como App em tela cheia -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -13,7 +16,11 @@
   <meta name="apple-mobile-web-app-title" content="W&T Varejista">
   <meta name="theme-color" content="#0b4a3a">
 
-  <!-- Links para o visual funcionar (Tailwind CSS) -->
+  <!-- Ícones oficiais para a tela inicial do celular -->
+  <link rel="icon" type="image/png" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/icon-512.png">
+
+  <!-- Framework visual (Tailwind CSS) -->
   <script src="https://jsdelivr.net"></script>
   
   <style>
@@ -22,22 +29,22 @@
 </head>
 <body class="flex min-h-screen flex-col items-center justify-center p-4">
 
-  <!-- Tela de Login Estruturada com base no seu app atual -->
+  <!-- Estrutura principal da tela de acesso -->
   <main class="w-full max-w-md mx-auto">
     <div class="flex flex-col items-center mb-8">
-      <!-- Logo do seu App -->
+      <!-- Nome e Identidade da Holding -->
       <h2 class="text-3xl font-bold tracking-wider text-white">W&T VAREJISTA</h2>
       <p class="text-sm text-emerald-200 mt-1">Plataforma de Holding</p>
     </div>
 
-    <!-- Caixa Branca de Login -->
+    <!-- Caixa Branca do Painel de Login -->
     <div class="bg-white rounded-2xl p-6 shadow-xl border border-emerald-800 text-slate-900">
       <div class="mb-6 text-center">
         <h1 class="text-xl font-semibold">Seja bem-vindo à W&T</h1>
         <p class="text-sm text-slate-500 mt-1">Acesso ao catálogo, caixa de balcão e gestão.</p>
       </div>
 
-      <!-- Botões de Acesso -->
+      <!-- Botões de Ação para o Usuário -->
       <div class="space-y-4">
         <button onclick="alert('Indo para o catálogo...')" class="w-full bg-emerald-700 text-white font-medium py-3 px-4 rounded-xl hover:bg-emerald-800 transition shadow-sm cursor-pointer">
           Acessar como Visitante / Catálogo
