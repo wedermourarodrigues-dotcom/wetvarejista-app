@@ -1,0 +1,16 @@
+{
+  "short_name": "W&T Varejista",
+  "name": "W&T Varejista",
+  "icons": [
+    {
+      "src": "https://w3.org",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0b4a3a",
+  "theme_color": "#0b4a3a",
+  "display": "standalone",
+  "orientation": "portrait"
+}
